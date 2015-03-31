@@ -1,0 +1,1 @@
+RewriteRule ^i-want-to-redir-from-here.html$		to-this-more-newer-place-k-thx-bai.html [R=301,L]
