@@ -2,6 +2,7 @@
 
 $dir = new DirectoryIterator(__DIR__.'/csv');
 $output = __DIR__.'/output/'.substr(md5(rand()), 0, 7).'.txt';
+fopen($output, "w");
 foreach($dir as $file)
 {
 	if(!$file->isDot() && ($csv = fopen(__DIR__.'/csv/'.$file->getFilename(),"r")))
